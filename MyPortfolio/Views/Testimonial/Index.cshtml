@@ -31,8 +31,11 @@
             <td>@item.Title</td>          
             <td>@item.Status</td>
             <td>@item.CommentDate</td>
-            <td><a href="Testimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-outline-danger">Sil</a> </td>
-            <td><a href="/Testimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-outline-info">Güncelle</a> </td>
+            <td>@( item.Status==true ? "Aktif" : "Pasif"  )</td>
+            <td><a href="/Testimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-outline-danger">Sil</a> </td>
+            <td><a href="/Testimonial/UpdateService/@item.TestimonialId" class="btn btn-outline-info">Güncelle</a> </td>
+            <td><a href="/Testimonial/MakeActive/@item.TestimonialId" class="btn btn-outline-success">Aktif </a> </td>
+            <td><a href="/Testimonial/MakePassive/@item.TestimonialId" class="btn btn-outline-secondary">Pasif </a> </td>
         </tr>
     }
 
