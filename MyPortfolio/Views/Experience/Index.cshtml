@@ -7,7 +7,7 @@
 <br />
 <br />
 <h3>Deneyim Sayfası</h3>
-
+<br />
 <table class="table table-bordered">
 
     <tr>
@@ -28,10 +28,11 @@
             <td>@item.ExperienceId</td>
             <td>@item.StartYear</td>
             <td>@item.EndYear</td>
+            <td>@item.Title</td>
             <td>@item.Description</td>
             <td>@item.Company</td>
             <td>@item.Location</td>
-            <td><a href="Experience/DeleteExperience/@item.ExperienceId" class="btn btn-outline-danger">Sil</a> </td>
+            <td><a href="/Experience/DeleteExperience/@item.ExperienceId" class="btn btn-outline-danger">Sil</a> </td>
             <td><a href="/Experience/UpdateExperience/@item.ExperienceId" class="btn btn-outline-info">Güncelle</a> </td>
         </tr>
     }
@@ -39,5 +40,5 @@
 </table>
 
 <br />
-<a href="/Experience/AddExperience" class="btn btn-outline-dark">Yeni Deneyim Ekle</a>
+<a href="/Experience/AddExperience" class="btn btn-outline-primary">Yeni Deneyim Ekle</a>
 

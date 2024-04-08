@@ -1,12 +1,15 @@
 ﻿using MyPortfolio.Models;
+using MyPortfolio.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.ModelBinding;
 using System.Web.Mvc;
 
 namespace MyPortfolio.Controllers
 {
+   
     public class AboutController : Controller
     {
         MyAcademyPortfolioProjectEntities db = new MyAcademyPortfolioProjectEntities();

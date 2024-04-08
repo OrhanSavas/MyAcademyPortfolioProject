@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace MyPortfolio.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         // GET: Default
@@ -60,6 +61,30 @@ namespace MyPortfolio.Controllers
             var categories = db.TblCategories.ToList();
             ViewBag.categories = categories;
             var values = db.TblProjects.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultExperiencePartial()
+        {
+            var values = db.TblExperiences.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultTestimonialPartial()
+        {
+            var values = db.TblTestimonials.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultTeamPartial()
+        {
+            var values = db.TblTeams.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultContactPartial()
+        {
+            var values = db.TblContacts.ToList();
             return PartialView(values);
         }
 

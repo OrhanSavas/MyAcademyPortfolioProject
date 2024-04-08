@@ -1,0 +1,32 @@
+﻿@model MyPortfolio.Models.TblTestimonials
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<br />
+<h3>Referans Güncelleme Sayfası</h3>
+
+<form method="post">
+    <input type="hidden" name="TestimonialId" value="@Model.TestimonialId" />
+    <label>Resim</label>
+    <input type="text" name="ImageUrl" value="@Model.ImageUrl" class="form-control" />
+    <label>Yorum</label>
+    <input type="text" name="Comment" value="@Model.Comment" class="form-control" />
+    <br />
+    <label>AdSoyad</label>
+    <input type="text" name="NameSurname" value="@Model.NameSurname" class="form-control" />
+    <br />
+    <label>Başlık</label>
+    <input type="text" name="Title" value="@Model.Title" class="form-control" />
+    <br />
+    <label>Yorum Tarih</label>
+    <input type="text" name="CommentDate" value="@Model.CommentDate" class="form-control" />
+    <br />
+
+
+    <button class="btn btn-outline-primary">Güncelle</button>
+
+</form>
+

@@ -1,0 +1,30 @@
+﻿@model List<MyPortfolio.Models.TblContacts>
+
+@foreach (var item in Model)
+{
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-info">
+                <h2>@item.NameSurname</h2>
+                <h3>@item.Address</h3>
+                <div class="footer-menu">
+                    <p>@item.Phone</p>
+                    <p>@item.Email</p>
+                </div>
+                <div class="footer-social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>@DateTime.Now.Year    &copy; <a href="/Default/Index">My Portfolio</a>, Tüm Hakları Saklıdır | Designed By <a href="https://htmlcodex.com">OrhnSavs</a></p>
+        </div>
+    </div>
+</div>
+}
+

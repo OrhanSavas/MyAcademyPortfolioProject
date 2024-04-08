@@ -1,9 +1,11 @@
 ﻿using MyPortfolio.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
 
 namespace MyPortfolio.Controllers
 {
@@ -30,6 +32,45 @@ namespace MyPortfolio.Controllers
             value.Status=false;
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult AddService()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AddService(TblServices service)
+        {
+            db.TblServices.Add(service);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DeleteService(int id)
+        {
+            var service = db.TblServices.Find(id);
+            db.TblServices.Remove(service);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult UpdateService(int id)
+        {
+            var value = db.TblServices.Find(id);
+            return View(value);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateService(TblServices service)
+        {
+            var value = db.TblServices.Find(service.ServiceId);
+            value.Icon = service.Icon;
+            value.Title = service.Title;
+            value.Description = service.Description;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
         }
     }
 }

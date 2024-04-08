@@ -7,7 +7,7 @@
 <br />
 <br />
 <h3>Referans Sayfası</h3>
-
+<br />
 <table class="table table-bordered">
 
     <tr>
@@ -17,9 +17,11 @@
         <th>AdSoyad</th>
         <th>Başlık</th>
         <th>Durum</th>
-        <th>Yorum Zamanı</th>
         <th>Sil</th>
         <th>Güncelle</th>
+        <th>Aktif</th>
+        <th>Pasif</th>
+
     </tr>
     @foreach (var item in Model)
     {
@@ -28,23 +30,18 @@
             <td>@item.ImageUrl</td>
             <td>@item.Comment</td>
             <td>@item.NameSurname</td>
-            <td>@item.Title</td>          
-            <td>@item.Status</td>
-            <td>@item.CommentDate</td>
+            <td>@item.Title</td>
             <td>@( item.Status==true ? "Aktif" : "Pasif"  )</td>
             <td><a href="/Testimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-outline-danger">Sil</a> </td>
-            <td><a href="/Testimonial/UpdateService/@item.TestimonialId" class="btn btn-outline-info">Güncelle</a> </td>
+            <td><a href="/Testimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-outline-info">Güncelle</a> </td>
             <td><a href="/Testimonial/MakeActive/@item.TestimonialId" class="btn btn-outline-success">Aktif </a> </td>
             <td><a href="/Testimonial/MakePassive/@item.TestimonialId" class="btn btn-outline-secondary">Pasif </a> </td>
         </tr>
     }
 
 
-
-
-
 </table>
 
 <br />
-<a href="/Testimonial/AddTestimonial" class="btn btn-outline-dark">Yeni Referans Ekle</a>
+<a href="/Testimonial/AddTestimonial" class="btn btn-outline-primary">Yeni Referans Ekle</a>
 

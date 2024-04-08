@@ -46,7 +46,7 @@ namespace MyPortfolio.Controllers
         }
 
         [HttpPost]
-        public ActionResult UpdateFeatures(TblFeatures features)
+        public ActionResult UpdateFeature(TblFeatures features)
         {
             var value = db.TblFeatures.Find(features.FeatureId);
             value.NameSurname = features.NameSurname;

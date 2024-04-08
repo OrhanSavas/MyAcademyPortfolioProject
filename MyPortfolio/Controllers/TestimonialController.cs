@@ -15,5 +15,63 @@ namespace MyPortfolio.Controllers
             var values = db.TblTestimonials.ToList();
             return View(values);
         }
+        public ActionResult MakeActive(int id)
+        {
+            var value = db.TblTestimonials.Find(id);
+            value.Status = true;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult MakePassive(int id)
+        {
+            var value = db.TblTestimonials.Find(id);
+            value.Status = false;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult AddTestimonial()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddTestimonial(TblTestimonials testimonial)
+        {
+            db.TblTestimonials.Add(testimonial);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DeleteTestimonial(int id)
+        {
+            var testimonial = db.TblTestimonials.Find(id);
+            db.TblTestimonials.Remove(testimonial);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult UpdateTestimonial(int id)
+        {
+            var value = db.TblTestimonials.Find(id);
+            return View(value);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateTestimonial(TblTestimonials testimonial)
+        {
+            var value = db.TblTestimonials.Find(testimonial.TestimonialId);
+            value.ImageUrl = testimonial.ImageUrl;
+            value.Comment = testimonial.Comment;
+            value.NameSurname = testimonial.NameSurname;
+            value.Title = testimonial.Title;
+            value.Status = testimonial.Status;
+            value.CommentDate = testimonial.CommentDate;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
     }
 }

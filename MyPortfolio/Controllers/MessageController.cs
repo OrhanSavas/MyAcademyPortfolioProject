@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
 
 namespace MyPortfolio.Controllers
 {
@@ -15,5 +16,19 @@ namespace MyPortfolio.Controllers
             var values = db.TblMessages.ToList();
             return View(values);
         }
+
+        [HttpGet]
+        public ActionResult DeleteMessage(int id)
+        {
+            var message = db.TblMessages.Find(id);
+            db.TblMessages.Remove(message);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+
+
+
     }
+
 }
