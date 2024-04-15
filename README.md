@@ -17,7 +17,8 @@ Kullanılan Teknolojiler:
 <h3>Projenin ekran görüntüleri</h3>
 
 <h4>UI</h4>
-![portfolio11](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/2e966304-017c-4e53-b3bd-981e29ec65a8)
+
+![1634123160087](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/3ecf2cae-d024-4720-9f49-26463bed2950)
 
 
 
