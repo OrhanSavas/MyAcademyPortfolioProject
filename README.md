@@ -2,7 +2,7 @@
 <hr>
 
 Bu proje, MVC5 teknolojileri kullanılarak geliştirilen bir portföy uygulamasıdır.
-
+<hr>
 
 
 Kullanılan Teknolojiler:
