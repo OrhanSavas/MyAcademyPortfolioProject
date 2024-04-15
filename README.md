@@ -19,6 +19,11 @@ Kullanılan Teknolojiler:
 <h4>UI</h4>
 
 ![portfolio1](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/05f8e769-9c21-433b-b6b9-23a6ec4536f0)
+![portfolio2](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/9dfc174f-4780-4ac3-8d89-a029b9f3983b)
+![portfolio3](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/9cc7be94-cba4-4958-bc16-76adbfcb0218)
+![portfolio4](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/37d2d54c-0e16-4286-94a9-1a0395997c69)
+![portfolio5](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/e5097c93-1271-4c7a-a830-dca4438cc5ab)
+![portfolio6](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/72a1dce2-a3ae-4d76-89e0-6dbed6c153c5)
 
 
 
