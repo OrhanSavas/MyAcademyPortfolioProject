@@ -1,7 +1,7 @@
 <H1>My Academy Portfolio Project</H1>
 <hr>
 
-Bu proje, MVC5 teknolojileri kullanılarak geliştirilen bir portföy uygulamasıdır.
+MVC5 teknolojileri kullanılarak geliştirilen bir portfolyo uygulamasıdır.
 <hr>
 
 
@@ -11,3 +11,7 @@ Kullanılan Teknolojiler:
 * DB First
 * Entity Framework
 * SQL Server
+
+<hr>
+
+<h3>Projenin ekran görüntüleri</h3>
