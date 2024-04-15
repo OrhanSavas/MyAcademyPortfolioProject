@@ -1,9 +1,9 @@
 <H1>My Academy Portfolio Project</H1>
 <hr>
 
-MVC5 teknolojileri kullanılarak geliştirilen bir portfolyo uygulamasıdır.
-Projede admin ve UI tarafı bulunmaktadır.
-Admin arayüzünden değişiklikler gerçekleştirilebilir.
+* MVC5 teknolojileri kullanılarak geliştirilen bir portfolyo uygulamasıdır.
+* Projede admin ve UI tarafı bulunmaktadır.
+* Admin arayüzünden değişiklikler gerçekleştirilebilir.
 <hr>
 
 
