@@ -15,4 +15,5 @@ Kullanılan Teknolojiler:
 <hr>
 
 <h3>Projenin ekran görüntüleri</h3>
-![portfolio1](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/a2d5268a-7ed9-4397-9e90-c69402acafe3)
+
+![4904982_2a6a_2](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/c1b7d51e-7288-4e61-8771-8835da958b2d)
