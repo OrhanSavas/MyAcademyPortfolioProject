@@ -3,7 +3,7 @@
 
 Bu proje, MVC5 teknolojileri kullanılarak geliştirilen bir portföy uygulamasıdır.
 
----------------------------------------
+
 
 Kullanılan Teknolojiler:
 * ASP.NET
