@@ -15,21 +15,6 @@ namespace MyPortfolio.Controllers
             var values = db.TblTestimonials.ToList();
             return View(values);
         }
-        public ActionResult MakeActive(int id)
-        {
-            var value = db.TblTestimonials.Find(id);
-            value.Status = true;
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
-        public ActionResult MakePassive(int id)
-        {
-            var value = db.TblTestimonials.Find(id);
-            value.Status = false;
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
         [HttpGet]
         public ActionResult AddTestimonial()
         {
@@ -60,15 +45,15 @@ namespace MyPortfolio.Controllers
         }
 
         [HttpPost]
-        public ActionResult UpdateTestimonial(TblTestimonials testimonial)
+        public ActionResult UpdateTestimonial(TblTestimonials testimonials)
         {
-            var value = db.TblTestimonials.Find(testimonial.TestimonialId);
-            value.ImageUrl = testimonial.ImageUrl;
-            value.Comment = testimonial.Comment;
-            value.NameSurname = testimonial.NameSurname;
-            value.Title = testimonial.Title;
-            value.Status = testimonial.Status;
-            value.CommentDate = testimonial.CommentDate;
+            var value = db.TblTestimonials.Find(testimonials.TestimonialId);
+            value.ImageUrl = testimonials.ImageUrl;
+            value.Comment = testimonials.Comment;
+            value.NameSurname = testimonials.NameSurname;
+            value.Title = testimonials.Title;
+            value.Status = testimonials.Status;
+            value.CommentDate = testimonials.CommentDate;
             db.SaveChanges();
             return RedirectToAction("Index");
 

@@ -16,12 +16,8 @@
         <th>Yorum</th>
         <th>AdSoyad</th>
         <th>Başlık</th>
-        <th>Durum</th>
         <th>Sil</th>
         <th>Güncelle</th>
-        <th>Aktif</th>
-        <th>Pasif</th>
-
     </tr>
     @foreach (var item in Model)
     {
@@ -31,11 +27,8 @@
             <td>@item.Comment</td>
             <td>@item.NameSurname</td>
             <td>@item.Title</td>
-            <td>@( item.Status==true ? "Aktif" : "Pasif"  )</td>
             <td><a href="/Testimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-outline-danger">Sil</a> </td>
             <td><a href="/Testimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-outline-info">Güncelle</a> </td>
-            <td><a href="/Testimonial/MakeActive/@item.TestimonialId" class="btn btn-outline-success">Aktif </a> </td>
-            <td><a href="/Testimonial/MakePassive/@item.TestimonialId" class="btn btn-outline-secondary">Pasif </a> </td>
         </tr>
     }
 

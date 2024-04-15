@@ -17,7 +17,7 @@ namespace MyPortfolio.Controllers
             return View(values);
         }
 
-        [HttpGet]
+        
         public ActionResult DeleteMessage(int id)
         {
             var message = db.TblMessages.Find(id);

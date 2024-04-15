@@ -14,6 +14,7 @@
         <th>İsim</th>
         <th>Email</th>
         <th>Konu</th>
+        <th>Mesaj</th>
         <th>Sil</th>
     </tr>
 
@@ -25,6 +26,7 @@
             <td>@item.Name</td>
             <td>@item.Email</td>
             <td>@item.Subject</td>
+            <td>@item.MessageContent</td>
             <td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-outline-danger">Sil</a></td>
         </tr>
 
