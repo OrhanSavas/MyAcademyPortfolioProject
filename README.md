@@ -18,9 +18,10 @@ Kullanılan Teknolojiler:
 
 <h4>UI</h4>
 
-![1634123160087](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/3ecf2cae-d024-4720-9f49-26463bed2950)
+
 
 
 
 <h4>Admin</h4>
 
+![admin1](https://github.com/OrhanSavas/MyAcademyPortfolioProject/assets/150591035/b6275bf4-2c70-4f5a-99b6-eb02c57ff0b8)
