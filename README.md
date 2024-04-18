@@ -4,6 +4,7 @@
 * MVC5 teknolojileri kullanılarak geliştirilen bir portfolyo uygulamasıdır.
 * Projede admin ve UI tarafı bulunmaktadır.
 * Admin arayüzünden değişiklikler gerçekleştirilebilir.
+*  Belirli bir süre sonra otomatik çıkış yapılması için custom bir attribute hazırlığı yapıldı (SessionTimeOut adında) ve bu attribute sayesinde belirlenen süre dolduğunda admin panelinden çıkış işlemi otomatik yapılıyor.
 <hr>
 
 
